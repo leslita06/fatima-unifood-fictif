@@ -1,0 +1,78 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>Audit SEO du site polycliniquefarah.com</title>
+<style>
+@page { size: A4; margin: 26mm 16mm 20mm 16mm; }
+body { font-family: 'Arial', Arial, sans-serif; color: #1F2A2B; font-size: 10.5pt; line-height: 1.45; }
+h1 { font-family: 'Arial', Arial, sans-serif; color: #007F82; font-size: 24pt; margin: 0 0 4px; line-height:1.15 }
+h2 { font-family: 'Arial', Arial, sans-serif; color: #007F82; font-size: 15pt; margin: 20px 0 6px; border-bottom: 2px solid #7FC6C7; padding-bottom: 3px; page-break-after: avoid; }
+h3 { color: #007F82; font-size: 12pt; margin: 14px 0 4px; page-break-after: avoid; }
+.sous { color: #666; font-size: 11pt; margin-bottom: 14px }
+.logo-top { height: 46px; margin-bottom: 10px }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 12px; font-size: 9.5pt; page-break-inside: auto }
+tr { page-break-inside: avoid }
+th { background: #007F82; color: #fff; text-align: left; padding: 5px 6px; }
+td { border-bottom: 1px solid #ddd; padding: 5px 6px; vertical-align: top }
+tr:nth-child(even) td { background: #EEF7F7 }
+.encart { background: #EEF7F7; border-left: 5px solid #7FC6C7; padding: 8px 12px; margin: 10px 0 }
+.alerte { background: #FFF4E5; border-left: 5px solid #E07B00; padding: 8px 12px; margin: 10px 0 }
+.champ { background: #FFF8C5; border: 1px dashed #C9A800; padding: 0 4px; font-style: italic }
+.suite { background: #EEF7F7; border-top: 3px solid #007F82; padding: 8px 12px; margin-top: 16px }
+.sommaire li { margin: 2px 0 }
+.saut { page-break-before: always }
+small, .src { color: #777; font-size: 8.5pt }
+</style></head><body>
+<img class="logo-top" src="https://leslita06.github.io/fatima-unifood-fictif/ftmn/FTM-N12/logo.png" alt="Logo Polyclinique Farah">
+<h1>Audit SEO du site polycliniquefarah.com</h1><div class="sous">Ce qui empêche les patients de trouver la polyclinique, dans l'ordre où le corriger. Mesure du 20/10/2026.</div>
+
+<ul class="sommaire"><li>1. Ce qui a été mesuré</li><li>2. Synthèse et note</li><li>3. Tableau des constats</li><li>4. Points forts et manques</li><li>5. Plan à 30, 60 et 90 jours</li><li>6. Plan des liens</li><li>7. Annexes</li><li>8. Suite proposée</li></ul>
+
+<h2>1. Ce qui a été mesuré, et ce qui ne l'a pas été</h2>
+<div class="encart"><b>Mesuré le 20/10/2026 (22 h 30, heure d'Abidjan)</b>, sans accès interne, sur ce qu'un visiteur et un robot voient :
+<ul><li>robots.txt et plan du site (6 sous-plans, 291 adresses), outil : curl ;</li>
+<li>45 pages lues une à une (titres, descriptions, H1, images, canonique, nombre de mots), outil : script Python ;</li>
+<li>13 pages clés en plus (urgences, spécialités, rendez-vous, FAQ…) ;</li>
+<li>temps de réponse du serveur (curl : 0,4 s pour le premier octet de l'accueil) ;</li>
+<li>chargement complet de l'accueil sur téléphone et sur ordinateur, outil : navigateur Chromium (mesure de laboratoire) ;</li>
+<li>recherche « site:polycliniquefarah.com » : signal brut de ce qui est indexé.</li></ul></div>
+<div class="alerte"><b>Non mesuré, faute de source :</b> les positions sur Google, les volumes de recherche, les clics, les liens qui pointent vers le site, la vitesse sur de vraies visites (PageSpeed a refusé la demande : quota épuisé), la fiche Google de l'établissement. <b>Positions non mesurées, Search Console à brancher.</b> Aucune position n'est donc affirmée dans ce rapport.</div>
+
+<h2>2. Synthèse</h2>
+<div class="encart"><b>Note : 38 sur 100</b> (32 points sur les 85 points mesurés ; la présence locale et les liens ne sont pas notés).</div>
+<table><tr><th>Domaine</th><th>Poids</th><th>Note</th><th>Ce qui pèse</th></tr><tr><td>Intégrité et sécurité du site</td><td>25</td><td>5</td><td>Bloc de liens de spam caché sur les pages clés</td></tr><tr><td>Indexation et technique</td><td>20</td><td>14</td><td>Bonnes bases (https, robots.txt, plan du site), mais pages parasites indexables</td></tr><tr><td>Contenu et balises</td><td>25</td><td>9</td><td>Titres de premier niveau absents, titres répétés, pages de démonstration</td></tr><tr><td>Vitesse sur mobile</td><td>15</td><td>4</td><td>Accueil très lourd sur téléphone</td></tr><tr><td>Présence locale et liens</td><td>15</td><td>non noté</td><td>Non mesuré : aucun outil de liens ni fiche Google ouverte</td></tr><tr><td><b>Total sur les domaines mesurés</b></td><td><b>85</b></td><td><b>32 / 85</b></td><td><b>soit 38 sur 100</b></td></tr></table>
+<p>Le site a de bonnes bases techniques. Mais il porte un bloc de liens de spam caché, signe probable d'un piratage. C'est la cause la plus sérieuse qui peut expliquer que les patients vous trouvent mal. Ensuite, des pages de modèle de thème et des titres mal écrits brouillent le message. Enfin, l'accueil est très lourd sur téléphone.</p>
+<h3>Les trois priorités</h3>
+<ol><li><b>Nettoyer le piratage</b> et mettre à jour le site. Gain : fort. Effort : une à deux journées. Qui : prestataire web.</li>
+<li><b>Supprimer les pages de démonstration</b> (Apex Clinic, Melbourne, texte en anglais). Gain : fort. Effort : une journée.</li>
+<li><b>Brancher la Search Console</b> pour mesurer enfin les positions et vérifier s'il existe une sanction. Gain : fort. Effort : une heure.</li></ol>
+<p>Aucune correction ne produit d'effet avant sa mise en ligne. Aucun classement ni délai n'est promis.</p>
+
+<h2 class="saut">3. Tableau des constats</h2>
+<table><tr><th>Domaine</th><th>Constat</th><th>Impact</th><th>Preuve</th><th>Correctif</th><th>Effort</th><th>Priorité</th></tr><tr><td>Sécurité</td><td>Un bloc de 42 liens vers des sites de jeux d'argent (mots « serbu4d », « slot », « mahjong ways ») est caché dans le code de l'accueil.</td><td>Risque de sanction manuelle de Google pour spam : le site peut perdre toute visibilité. Le site a probablement été piraté.</td><td>Code de l'accueil relevé par curl le 20/10/2026, bloc &lt;div style="display: none;"&gt;. Le même mot apparaît sur /urgences/ et /nos-medecins/. Visible aussi dans l'extrait de résultat de la recherche site:polycliniquefarah.com.</td><td>Nettoyer le site, changer tous les accès, mettre à jour WordPress et ses extensions, puis demander un réexamen dans la Search Console.</td><td>Une à deux journées, prestataire web</td><td><b>1. Urgent</b></td></tr><tr><td>Contenu</td><td>Des pages de modèle de thème sont en ligne : « Apex Clinic, 20,000 Startup Businesses » (/clients/), une adresse à Melbourne et info@example.com (/hemodialyse/), du texte de remplissage en anglais (/find-a-doctor/), un blog vide.</td><td>Le moteur voit un site incohérent. Un patient qui tombe sur ces pages perd confiance.</td><td>Pages ouvertes le 20/10/2026 ; mots relevés par curl. Extraits visibles dans la recherche site:.</td><td>Supprimer ces pages ou les remplir, puis les retirer du plan du site.</td><td>Une journée</td><td><b>2. Haute</b></td></tr><tr><td>Contenu</td><td>42 pages sur 45 relevées n'ont aucun titre de premier niveau (H1).</td><td>Le moteur comprend mal le sujet de chaque page (urgences, spécialités, rendez-vous).</td><td>Relevé automatique des 45 premières pages du plan du site, 20/10/2026.</td><td>Ajouter un H1 clair par page : « Urgences 24h/24 à Marcory » ⟦à confirmer : horaires réels⟧, « Prendre rendez-vous »…</td><td>Quelques heures</td><td><b>3. Haute</b></td></tr><tr><td>Balises</td><td>39 titres de page sur 45 répètent « La Meilleure Clinique d'Abidjan » et dépassent souvent 60 caractères. 12 pages n'ont pas de description, 23 en ont une trop longue (plus de 160 caractères), souvent un extrait automatique.</td><td>Titres coupés dans les résultats ; toutes les pages se ressemblent. La mention « meilleure » est une affirmation à vérifier au regard des règles de publicité des établissements de santé.</td><td>Relevé des balises title et meta description, 20/10/2026.</td><td>Écrire un titre court et unique par page (service + quartier + Polyclinique Farah) et une description de 140 à 155 caractères. Faire valider la formulation par la direction médicale.</td><td>Une journée</td><td>4. Moyenne</td></tr><tr><td>Vitesse</td><td>L'accueil transfère environ 28 Mo et 289 requêtes sur téléphone. Chargement complet en 6,5 s, premier affichage en 2,8 s, sur une connexion rapide.</td><td>Sur un réseau mobile ivoirien, beaucoup de visiteurs partent avant l'affichage.</td><td>Mesure de laboratoire (Chromium, écran 390 px), 20/10/2026. PageSpeed a refusé la demande (quota épuisé).</td><td>Convertir les grandes images PNG (jusqu'à 840 Ko chacune) en WebP, alléger le carrousel, charger les images à la demande.</td><td>Une journée</td><td>5. Moyenne</td></tr><tr><td>Technique</td><td>Pages parasites dans le plan du site : /checkout/, /notif/, /cancel/, /return/, /counter/, /before-and-after/, et une page « 404 Page Non trouvé » qui répond 200. Huit pages « Farah #1 à #8 » presque identiques, sans description.</td><td>Le moteur perd du temps sur des pages sans valeur ; risque de contenu jugé faible.</td><td>Plan du site page-sitemap.xml (85 adresses), relevé du 20/10/2026.</td><td>Retirer ces pages de l'index (balise noindex) et du plan du site, ou les supprimer.</td><td>Quelques heures</td><td>6. Moyenne</td></tr><tr><td>Technique</td><td>Le sous-domaine de test myfarahtest.polycliniquefarah.com (écran de connexion) apparaît dans les résultats de recherche.</td><td>Image peu sérieuse et exposition inutile d'un espace de test.</td><td>Recherche site:polycliniquefarah.com, 20/10/2026.</td><td>Protéger le sous-domaine par mot de passe ou noindex.</td><td>Une heure</td><td>7. Moyenne</td></tr><tr><td>Contenu</td><td>165 fiches médecins reprennent la description générique de l'accueil.</td><td>Les fiches ne ressortent pas sur une recherche « cardiologue Marcory » par exemple.</td><td>Exemple : /team/dr-selly-charle/, relevé du 20/10/2026.</td><td>Une description par fiche : spécialité, jours de consultation, prise de rendez-vous.</td><td>Un chantier</td><td>8. Moyenne</td></tr><tr><td>Liens internes</td><td>Image du haut de page introuvable (Top-Logo-300x83.png en 404). Une adresse du plan du site (/greffe-de-cheveux-en-cote-divoire-emax-hair/) redirige vers une adresse qui ne répond pas.</td><td>Signal de site mal entretenu.</td><td>Tests curl du 20/10/2026.</td><td>Corriger ou retirer ces liens.</td><td>Une heure</td><td>9. Faible</td></tr></table>
+
+<h2>4. Points forts et manques</h2>
+<h3>Cinq points forts</h3><ul><li>Adresse sécurisée https, avec redirection propre de http et de la version sans « www » (code 301).</li><li>Fichier robots.txt propre, qui déclare le plan du site.</li><li>Plan du site à jour (pages mises à jour le 18/09/2026).</li><li>Lien canonique présent, langue fr-FR déclarée, affichage adapté au téléphone.</li><li>Données structurées et balises de partage (Open Graph) présentes.</li></ul>
+<h3>Cinq manques prioritaires</h3><ul><li>Liens de spam cachés (piratage probable).</li><li>Pages de modèle de thème en ligne.</li><li>Pas de titre de premier niveau.</li><li>Titres et descriptions répétés.</li><li>Accueil trop lourd sur téléphone.</li></ul>
+
+<h2>5. Plan à 30, 60 et 90 jours</h2>
+<table><tr><th>Échéance</th><th>Action</th><th>Qui</th><th>Indicateur de réussite</th></tr><tr><td>J+30</td><td>Nettoyer le piratage, mettre à jour WordPress et les extensions, supprimer les pages de démonstration.</td><td>Prestataire web</td><td>Zéro lien de spam dans le code ; demande de réexamen acceptée si une sanction existe</td></tr><tr><td>J+30</td><td>Brancher la Search Console et Google Analytics, ouvrir l'accès à Fatima en lecture.</td><td>Odile + prestataire</td><td>Premières positions et clics mesurés</td></tr><tr><td>J+60</td><td>H1, titres et descriptions sur les 20 pages clés (urgences, spécialités, rendez-vous, médecins).</td><td>Fatima rédige, prestataire publie</td><td>20 pages conformes au relevé</td></tr><tr><td>J+60</td><td>Images en WebP, carrousel allégé.</td><td>Prestataire web</td><td>Accueil sous 5 Mo sur téléphone</td></tr><tr><td>J+90</td><td>Fiches médecins réécrites, fiche Google de l'établissement vérifiée.</td><td>Fatima + secrétariat médical</td><td>Clics depuis la recherche, appels depuis la fiche Google</td></tr></table>
+
+<h2>6. Plan des liens</h2>
+<p>Sans outil de mesure des liens, ce plan est partiel. Aucun message ne part sans votre accord. Pas d'achat de liens.</p>
+<table><tr><th>Cible</th><th>Pertinence</th><th>Contact public</th><th>Message préparé</th><th>Statut</th></tr><tr><td>AfriDoctor (fiche existante)</td><td>Annuaire de santé où la polyclinique est déjà listée</td><td>Formulaire du site afridoctor.com</td><td>« Bonjour, la Polyclinique Farah souhaite mettre à jour sa fiche et y ajouter le lien vers son site www.polycliniquefarah.com. Merci. »</td><td>À valider, non envoyé</td></tr><tr><td>Assureurs partenaires</td><td>Leur liste de prestataires peut pointer vers le site</td><td>⟦à confirmer : contacts des assureurs⟧</td><td>« Bonjour, pourriez-vous ajouter le lien de notre site à notre fiche dans votre réseau de soins ? »</td><td>À valider, non envoyé</td></tr><tr><td>Fiche Google de l'établissement</td><td>Premier point de contact des patients du quartier</td><td>Compte Google de la polyclinique</td><td>Vérifier que le site, les horaires et les spécialités sont à jour.</td><td>Non mesuré</td></tr></table>
+
+<h2 class="saut">7. Annexes</h2>
+<h3>A. Hygiène</h3>
+<ul><li>Textes de remplacement d'images : présents sur la plupart des images relevées ; à vérifier sur la médiathèque.</li>
+<li>Versions des outils déclarées dans le code : WordPress 7.0.7, All in One SEO 5.0.2.1, Slider Revolution 6.5.8. À faire vérifier et mettre à jour par le prestataire.</li>
+<li>Page d'erreur personnalisée « 404 Page Non trouvé » qui répond 200 : la passer en noindex.</li></ul>
+<h3>B. Méthode et grille</h3>
+<p>Mesure faite avec curl et un script Python de lecture des pages, puis un navigateur Chromium sans compte. Notes attribuées sur une grille écrite (section 2). Remesure prévue avec les mêmes outils, après la mise en ligne des corrections.</p>
+<h3>C. Angles morts</h3>
+<p>Pages des 165 fiches médecins et des 29 « cas » non relues une à une. Liens entrants, positions et fiche Google non mesurés. Le contenu médical du site n'a pas été jugé : ce rapport n'ajoute aucune affirmation de santé.</p>
+
+<div class="suite"><h3>Suite proposée</h3>
+<p><b>A.</b> Je prépare le message pour votre prestataire web avec les preuves du piratage. Contrepartie : il faut son nom et son contact.</p>
+<p><b>B.</b> Vous branchez la Search Console, je remesure positions et clics sous une semaine. Contrepartie : un accès en lecture à ouvrir.</p>
+<p><b>C.</b> Je rédige les titres, H1 et descriptions des 20 pages clés. Contrepartie : validation de la direction médicale avant publication.</p></div>
+
+<p class="src">Document de travail préparé pour Polyclinique Farah le 20/10/2026. À valider avant toute diffusion.</p>
+</body></html>
