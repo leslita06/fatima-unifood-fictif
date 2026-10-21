@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Séminaires au Novotel Abidjan Plateau · Demande de devis</title>
+<meta name="description" content="Organisez votre séminaire au Novotel Abidjan Plateau, au bord de la lagune Ébrié. Estimez votre budget en une minute et recevez votre devis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bleu:#1E22AA;--bleu-f:#14177A;--ciel:#EEF0FB;--encre:#1B1D2E;--gris:#5E6175;--filet:#E1E3EE;--fond:#F7F8FC;--vert:#1C8C5E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Open Sans',Arial,sans-serif;color:var(--encre);background:#fff;font-size:17px;line-height:1.55}
+h1,h2,h3,.btn,.chiffre,.lbl{font-family:'Montserrat',Arial,sans-serif}
+a{color:var(--bleu)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--filet)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+header.top img{height:44px}
+.btn{display:inline-block;background:var(--bleu);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 26px;font-size:15px;border:0;cursor:pointer}
+.btn:hover{background:var(--bleu-f)}
+.btn.clair{background:#fff;color:var(--bleu)}
+.hero{position:relative;color:#fff;min-height:560px;display:flex;align-items:flex-end;background:#111 url(assets/ho_02.jpg) center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,23,122,.15) 0%,rgba(20,23,122,.88) 78%)}
+.hero .wrap{position:relative;padding-bottom:64px;padding-top:120px}
+.sur{font-family:'Montserrat';font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;opacity:.9}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;font-weight:800;margin:14px 0 18px;max-width:820px}
+.hero p{font-size:20px;max-width:640px;opacity:.95;margin-bottom:28px}
+.preuves{display:flex;gap:40px;flex-wrap:wrap;margin-top:40px}
+.preuves div{border-left:3px solid #fff;padding-left:14px}
+.chiffre{font-size:30px;font-weight:800;display:block;line-height:1}
+.preuves span:last-child{font-size:14px;opacity:.9}
+section{padding:80px 0}
+.titre{font-size:clamp(28px,3.4vw,40px);font-weight:800;line-height:1.15;margin-bottom:14px}
+.chapo{color:var(--gris);font-size:19px;max-width:700px;margin-bottom:40px}
+.sim{background:var(--fond)}
+.grille{display:grid;grid-template-columns:1.25fr .9fr;gap:32px;align-items:start}
+.carte{background:#fff;border:1px solid var(--filet);border-radius:20px;padding:30px}
+.champ{margin-bottom:26px}
+.lbl{display:block;font-weight:700;font-size:15px;margin-bottom:10px}
+.choix{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.choix.deux{grid-template-columns:repeat(2,1fr)}
+.choix label{border:1.5px solid var(--filet);border-radius:14px;padding:14px;cursor:pointer;font-size:15px;line-height:1.35;display:block;transition:.15s}
+.choix label b{display:block;font-family:'Montserrat';font-size:15px;margin-bottom:3px}
+.choix label small{color:var(--gris);font-size:13px}
+.choix input{display:none}
+.choix input:checked+label{border-color:var(--bleu);background:var(--ciel);box-shadow:0 0 0 1px var(--bleu)}
+.ligne{display:flex;align-items:center;gap:16px}
+input[type=range]{flex:1;accent-color:var(--bleu);height:6px}
+.val{font-family:'Montserrat';font-weight:800;font-size:24px;min-width:70px;text-align:right;color:var(--bleu)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opts label{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--filet);border-radius:12px;padding:12px;font-size:15px;cursor:pointer}
+.opts input{accent-color:var(--bleu);width:18px;height:18px;margin-top:3px}
+.recap{position:sticky;top:96px;background:var(--bleu);color:#fff;border-radius:20px;padding:30px}
+.recap .total{font-family:'Montserrat';font-size:42px;font-weight:800;line-height:1.05;margin:6px 0 4px}
+.recap .pp{opacity:.85;font-size:15px}
+.recap ul{list-style:none;margin:22px 0;border-top:1px solid rgba(255,255,255,.25)}
+.recap li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:15px}
+.salle{background:rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;margin-bottom:20px;font-size:15px}
+.salle b{font-family:'Montserrat'}
+.note{font-size:13px;opacity:.8;margin-top:14px}
+.atouts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.atout{border-radius:20px;overflow:hidden;border:1px solid var(--filet);background:#fff}
+.atout img{width:100%;height:220px;object-fit:cover;display:block}
+.atout div{padding:22px}
+.atout h3{font-size:20px;margin-bottom:8px}
+.atout p{color:var(--gris);font-size:16px}
+table{width:100%;border-collapse:collapse;font-size:15px;background:#fff;border-radius:16px;overflow:hidden}
+th{background:var(--bleu);color:#fff;font-family:'Montserrat';text-align:left;padding:14px 16px;font-size:14px}
+td{padding:13px 16px;border-bottom:1px solid var(--filet)}
+tr:nth-child(even) td{background:var(--fond)}
+.devis{background:var(--ciel)}
+.devis .carte{max-width:820px;margin:0 auto}
+.rappel{background:var(--fond);border-radius:14px;padding:16px 18px;margin-bottom:18px;font-size:15px}
+footer{background:var(--encre);color:#C9CBD8;padding:48px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer b{color:#fff;font-family:'Montserrat'}
+.wa{position:fixed;right:20px;bottom:20px;z-index:30;background:#25D366;color:#fff;border-radius:999px;padding:14px 20px;font-family:'Montserrat';font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.18);font-size:15px}
+@media(max-width:900px){.grille,.atouts{grid-template-columns:1fr}.choix{grid-template-columns:1fr 1fr}.opts{grid-template-columns:1fr}.recap{position:static}section{padding:56px 0}.tbl{overflow-x:auto}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <img src="assets/logo-novotel.svg" alt="Novotel">
+  <a class="btn" href="#simulateur">Estimer mon séminaire</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="sur">Séminaires et réunions · Abidjan Plateau</div>
+  <h1>Votre séminaire au bord de la lagune, au cœur du Plateau.</h1>
+  <p>Un hôtel 4 étoiles dans le quartier des affaires, face à la lagune Ébrié. Estimez votre budget en une minute, notre équipe vous envoie le devis détaillé.</p>
+  <a class="btn clair" href="#simulateur">Estimer mon budget</a>
+  <div class="preuves">
+    <div><span class="chiffre">258</span><span>chambres sur place</span></div>
+    <div><span class="chiffre">4 ★</span><span>au cœur du Plateau</span></div>
+    <div><span class="chiffre">24 h</span><span>pour recevoir votre devis</span></div>
+  </div>
+</div></div>
+
+<section class="sim" id="simulateur"><div class="wrap">
+  <h2 class="titre">Estimez votre budget</h2>
+  <p class="chapo">Choisissez votre formule et vos options : l'estimation s'affiche tout de suite.</p>
+  <div class="grille">
+    <div class="carte">
+      <div class="champ">
+        <span class="lbl">1. Votre formule</span>
+        <div class="choix">
+          <input type="radio" name="formule" id="f1" value="demi"><label for="f1"><b>Demi-journée</b><small>Salle, pause, déjeuner ou dîner</small></label>
+          <input type="radio" name="formule" id="f2" value="journee" checked><label for="f2"><b>Journée d'étude</b><small>Salle, 2 pauses, déjeuner</small></label>
+          <input type="radio" name="formule" id="f3" value="residentiel"><label for="f3"><b>Résidentiel</b><small>Journée d'étude, chambre et dîner</small></label>
+        </div>
+      </div>
+      <div class="champ">
+        <span class="lbl">2. Nombre de participants</span>
+        <div class="ligne"><input type="range" id="nb" min="5" max="150" step="1" value="40"><span class="val" id="nbv">40</span></div>
+      </div>
+      <div class="champ">
+        <span class="lbl">3. Nombre de jours</span>
+        <div class="ligne"><input type="range" id="jours" min="1" max="5" step="1" value="1"><span class="val" id="joursv">1</span></div>
+      </div>
+      <div class="champ">
+        <span class="lbl">4. Disposition de la salle</span>
+        <div class="choix">
+          <input type="radio" name="dispo" id="d1" value="theatre" checked><label for="d1"><b>Théâtre</b><small>Plénière, conférence</small></label>
+          <input type="radio" name="dispo" id="d2" value="classe"><label for="d2"><b>Classe</b><small>Formation avec tables</small></label>
+          <input type="radio" name="dispo" id="d3" value="u"><label for="d3"><b>En U</b><small>Atelier, échanges</small></label>
+          <input type="radio" name="dispo" id="d4" value="reunion"><label for="d4"><b>Réunion</b><small>Autour d'une table</small></label>
+          <input type="radio" name="dispo" id="d5" value="banquet"><label for="d5"><b>Banquet</b><small>Tables rondes</small></label>
+        </div>
+      </div>
+      <div class="champ">
+        <span class="lbl">5. Options</span>
+        <div class="opts" id="opts"></div>
+      </div>
+    </div>
+
+    <aside class="recap">
+      <div class="sur">Estimation</div>
+      <div class="total" id="total">0 F CFA</div>
+      <div class="pp" id="pp"></div>
+      <ul id="lignes"></ul>
+      <div class="salle" id="salle"></div>
+      <a class="btn clair" href="#devis" style="width:100%;text-align:center">Recevoir mon devis</a>
+      <p class="note">Estimation indicative, hors taxes. Le devis définitif est établi par notre équipe séminaires selon vos dates et la disponibilité des salles.</p>
+    </aside>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="titre">Ce qui fait la différence</h2>
+  <p class="chapo">Un hôtel 4 étoiles dans le quartier des affaires : vos participants arrivent vite, travaillent bien et se retrouvent après.</p>
+  <div class="atouts">
+    <div class="atout"><img src="assets/sm_00.jpg" alt="Séminaire au Novotel"><div><h3>Une équipe dédiée</h3><p>Un interlocuteur unique du devis au jour J : accueil, technique, restauration.</p></div></div>
+    <div class="atout"><img src="assets/ho_03.jpg" alt="Jardin du Novotel"><div><h3>Des pauses au vert</h3><p>Le jardin tropical et la terrasse pour souffler entre deux sessions.</p></div></div>
+    <div class="atout"><img src="assets/rsr001_00.jpg" alt="Restaurant du Novotel"><div><h3>Sur place, tout est prévu</h3><p>Restaurant, bar et 258 chambres pour vos séminaires de plusieurs jours.</p></div></div>
+  </div>
+</div></section>
+
+<section class="devis" id="devis"><div class="wrap">
+  <h2 class="titre" style="text-align:center">Recevez votre devis</h2>
+  <p class="chapo" style="margin:0 auto 30px;text-align:center">Votre estimation est jointe automatiquement à la demande. Notre équipe vous répond sous 24 heures ouvrées.</p>
+  <div class="carte">
+    <div class="rappel" id="rappel"></div>
+    <iframe id="tally" data-tally-src="" loading="lazy" width="100%" height="900" frameborder="0" title="Demande de devis séminaire"></iframe>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Novotel Abidjan Plateau</b><br>10, avenue du Général de Gaulle, Plateau, Abidjan<br>Tél. +225 27 20 33 40 00</div>
+  <div><b>Équipe séminaires</b><br>Kevin, commercial séminaires<br><a href="mailto:abidjan.reservation@accor.com" style="color:#fff">abidjan.reservation@accor.com</a></div>
+</div></footer>
+
+<script src="https://tally.so/widgets/embed.js"></script>
+<script>
+/* Tarifs à ajuster : une seule ligne par prix, en F CFA hors taxes */
+const TARIFS = {
+  demi:        {nom:"Demi-journée",     parPers:25000},
+  journee:     {nom:"Journée d'étude",  parPers:35000},
+  residentiel: {nom:"Résidentiel",      parPers:110000}
+};
+const OPTIONS = [
+  {id:"cocktail", nom:"Cocktail de clôture",          prix:12000,  unite:"pers"},
+  {id:"dejplus",  nom:"Déjeuner amélioré",            prix:8000,   unite:"pers_jour"},
+  {id:"sono",     nom:"Sonorisation et micros",       prix:150000, unite:"jour"},
+  {id:"video",    nom:"Captation vidéo",              prix:250000, unite:"jour"},
+  {id:"interp",   nom:"Interprétation simultanée",    prix:450000, unite:"jour"},
+  {id:"navette",  nom:"Navette aéroport (aller-retour)", prix:30000, unite:"pers"}
+];
+const DISPO = {theatre:"Théâtre",classe:"Classe",u:"En U",reunion:"Réunion",banquet:"Banquet"};
+const TALLY = "https://tally.so/embed/aOQxD2?hideTitle=1&transparentBackground=1&dynamicHeight=1";
+
+const f = n => Math.round(n).toLocaleString("fr-FR").replace(/\u202f|\u00a0/g," ") + " F CFA";
+const $ = id => document.getElementById(id);
+$("opts").innerHTML = OPTIONS.map(o=>`<label><input type="checkbox" value="${o.id}"><span>${o.nom}<br><small style="color:#5E6175">${o.prix.toLocaleString("fr-FR")} F ${o.unite==="jour"?"par jour":o.unite==="pers"?"par personne":"par personne et par jour"}</small></span></label>`).join("");
+
+let timer;
+function calc(){
+  const formule = document.querySelector("[name=formule]:checked").value;
+  const dispo = document.querySelector("[name=dispo]:checked").value;
+  const nb = +$("nb").value, j = +$("jours").value;
+  $("nbv").textContent = nb; $("joursv").textContent = j;
+  const base = TARIFS[formule].parPers * nb * j;
+  const lignes = [[`${TARIFS[formule].nom} · ${nb} pers. × ${j} j`, base]];
+  let total = base; const choisies = [];
+  document.querySelectorAll("#opts input:checked").forEach(c=>{
+    const o = OPTIONS.find(x=>x.id===c.value);
+    const m = o.unite==="jour" ? o.prix*j : o.unite==="pers" ? o.prix*nb : o.prix*nb*j;
+    lignes.push([o.nom, m]); total += m; choisies.push(o.nom);
+  });
+  $("total").textContent = f(total);
+  $("pp").textContent = "soit " + f(total/nb/j) + " par personne et par jour";
+  $("lignes").innerHTML = lignes.map(l=>`<li><span>${l[0]}</span><b>${f(l[1])}</b></li>`).join("");
+  $("salle").innerHTML = `Disposition <b>${DISPO[dispo].toLowerCase()}</b> : notre équipe vous propose la salle adaptée à vos ${nb} participants.`;
+  $("rappel").innerHTML = `<b>Votre estimation :</b> ${TARIFS[formule].nom}, ${nb} participants, ${j} jour${j>1?"s":""}, disposition ${DISPO[dispo].toLowerCase()}${choisies.length?", "+choisies.join(", ").toLowerCase():""}. <b>${f(total)}</b>`;
+  clearTimeout(timer);
+  timer = setTimeout(()=>{
+    const p = new URLSearchParams({formule:TARIFS[formule].nom, participants:nb, jours:j, configuration:DISPO[dispo], options:choisies.join(", ")||"Aucune", budget_estime:Math.round(total)});
+    const src = TALLY + "&" + p.toString();
+    const fr = $("tally");
+    if (fr.dataset.tallySrc !== src){ fr.dataset.tallySrc = src; fr.src = src; }
+  }, 400);
+}
+document.querySelectorAll("input").forEach(i=>i.addEventListener("input",calc));
+calc();
+</script>
+<a class="wa" href="https://wa.me/2252720334000" target="_blank" rel="noopener">Une question ? WhatsApp</a>
+</body>
+</html>
