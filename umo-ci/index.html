@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UMO Côte d'Ivoire · Recrutement, intérim et paie à Abidjan</title>
+<meta name="description" content="UMO Côte d'Ivoire : recrutement, placement de personnel, paie et gestion des expatriés à Abidjan depuis 2019. Confiez-nous un recrutement ou déposez votre CV.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--or:#F4B628;--or-clair:#FDF1D6;--noir:#1D1D1B;--texte:#383838;--gris:#6B6B6B;--fond:#F4F4F4;--filet:#E0E0E0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Montserrat,Arial,sans-serif;color:var(--texte);line-height:1.55;background:#fff}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.ac{background:#FFE58A;color:#5a4300;font-size:.78em;font-weight:600;padding:2px 8px;border-radius:10px;white-space:nowrap}
+/* Bandeau */
+.top{background:var(--noir);color:#fff;font-size:13px}
+.top .wrap{display:flex;gap:24px;justify-content:flex-end;padding-top:8px;padding-bottom:8px}
+.top a{text-decoration:none}
+header{border-bottom:1px solid var(--filet);background:#fff;position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:50px}
+.brand span{font-weight:700;color:var(--noir);font-size:15px;line-height:1.2}
+.brand small{display:block;font-weight:500;color:var(--gris);font-size:12px}
+nav{display:flex;gap:26px;font-weight:600;font-size:14px}
+nav a{text-decoration:none}
+.btn{display:inline-block;font-weight:700;font-size:14px;text-decoration:none;padding:14px 24px;border-radius:6px;border:2px solid var(--or);background:var(--or);color:var(--noir);cursor:pointer}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.btn.dark{background:var(--noir);border-color:var(--noir);color:#fff}
+/* Hero */
+.hero{position:relative;color:#fff;background:#111}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:96px}
+.kicker{display:inline-block;background:var(--or);color:var(--noir);font-weight:700;font-size:12px;letter-spacing:.08em;padding:6px 12px;border-radius:4px;text-transform:uppercase}
+.hero h1{font-size:46px;line-height:1.12;font-weight:800;margin:20px 0 18px;max-width:760px}
+.hero p{font-size:18px;max-width:620px;margin-bottom:34px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px}
+.duo a{display:block;text-decoration:none;background:rgba(255,255,255,.96);color:var(--noir);border-radius:10px;padding:22px 24px;border-top:5px solid var(--or)}
+.duo b{display:block;font-size:19px;margin-bottom:4px}
+.duo span{font-size:14px;color:var(--gris)}
+/* Chiffres */
+.chiffres{background:var(--noir);color:#fff}
+.chiffres .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:34px;padding-bottom:34px;text-align:center}
+.chiffres b{display:block;font-size:36px;color:var(--or);font-weight:800}
+.chiffres span{font-size:14px}
+section{padding:80px 0}
+.eyebrow{color:#B07D00;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+h2{font-size:34px;line-height:1.2;color:var(--noir);font-weight:800;margin:10px 0 14px}
+.lead{font-size:17px;max-width:720px;color:var(--gris)}
+/* Entreprises */
+.grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0}
+.service{background:var(--fond);border-radius:10px;padding:18px 20px}
+.service b{display:block;color:var(--noir);font-size:16px;margin-bottom:4px}
+.service span{font-size:14px}
+.steps{counter-reset:s;margin-top:26px}
+.step{display:flex;gap:16px;margin-bottom:16px}
+.step:before{counter-increment:s;content:counter(s);flex:0 0 36px;height:36px;border-radius:50%;background:var(--or);color:var(--noir);font-weight:800;display:flex;align-items:center;justify-content:center}
+.step p{font-size:15px}
+form.card{background:#fff;border:1px solid var(--filet);border-radius:12px;padding:30px;box-shadow:0 12px 40px rgba(0,0,0,.08);border-top:6px solid var(--or)}
+form.card h3{font-size:22px;color:var(--noir);margin-bottom:4px}
+form.card .sub{font-size:14px;color:var(--gris);margin-bottom:20px}
+label{display:block;font-size:13px;font-weight:600;color:var(--noir);margin:14px 0 6px}
+input,select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid #cfcfcf;border-radius:6px;background:#fff}
+textarea{min-height:90px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tel{display:grid;grid-template-columns:110px 1fr;gap:8px}
+form .btn{width:100%;margin-top:22px;font-size:15px}
+.note{font-size:12px;color:var(--gris);margin-top:12px}
+/* Candidats */
+.cand{background:var(--fond)}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0}
+.job{background:#fff;border-radius:10px;padding:18px 20px;text-decoration:none;border-left:4px solid var(--or);display:block}
+.job b{display:block;color:var(--noir);font-size:15.5px;margin-bottom:6px}
+.job span{font-size:13px;color:var(--gris)}
+.cv{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;background:#fff;border-radius:12px;overflow:hidden;margin-top:44px}
+.cv img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.cv .in{padding:34px}
+.drop{border:2px dashed var(--or);background:var(--or-clair);border-radius:10px;padding:20px;text-align:center;font-size:14px;margin-top:14px}
+/* Équipe */
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.pers{border:1px solid var(--filet);border-radius:10px;padding:20px}
+.ini{width:52px;height:52px;border-radius:50%;background:var(--noir);color:var(--or);font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.pers b{display:block;color:var(--noir)}
+.pers span{font-size:13.5px;color:var(--gris)}
+/* Salon */
+.salon{background:var(--noir);color:#fff;border-radius:14px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.salon .in{padding:40px}
+.salon h3{font-size:26px;margin:10px 0 12px;color:#fff}
+.salon img{width:100%;height:100%;object-fit:cover}
+/* FAQ */
+details{border-bottom:1px solid var(--filet);padding:18px 0}
+summary{font-weight:700;color:var(--noir);cursor:pointer;font-size:16px}
+details p{margin-top:10px;font-size:15px}
+/* Final */
+.final{background:var(--or);text-align:center}
+.final h2{margin-top:0}
+.final .btns{display:flex;gap:14px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+footer{background:var(--noir);color:#bbb;font-size:13.5px;padding:44px 0}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+footer b{color:#fff;display:block;margin-bottom:8px}
+footer img{height:46px;margin-bottom:12px}
+.wa{position:fixed;right:22px;bottom:22px;background:#25D366;color:#fff;font-weight:700;text-decoration:none;padding:14px 18px;border-radius:30px;box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:14px;z-index:9}
+@media (max-width:900px){
+ nav{display:none}.hero h1{font-size:32px}.duo,.grid2,.services,.jobs,.team,.cv,.salon,footer .wrap,.row{grid-template-columns:1fr}
+ .chiffres .wrap{grid-template-columns:1fr 1fr}header .btn{display:none}.brand img{height:42px}.top .wrap{justify-content:center;flex-wrap:wrap;gap:10px}section{padding:56px 0}h2{font-size:27px}
+}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a href="tel:+2252721389763">📞 +225 27 21 38 97 63</a>
+  <a href="mailto:contact.ci@umo-interim.com">✉️ contact.ci@umo-interim.com</a>
+  <span>📍 Abidjan</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="brand" href="#"><img src="assets/UMO-logo.svg" alt="UMO Intérim"><span>UMO Côte d'Ivoire<small>Recrutement · Intérim · Paie</small></span></a>
+  <nav><a href="#entreprises">Entreprises</a><a href="#candidats">Candidats</a><a href="#equipe">Équipe</a><a href="#faq">Questions</a></nav>
+  <a class="btn" href="#demande">Confier un recrutement</a>
+</div></header>
+
+<div class="hero">
+  <img src="assets/hero.jpg" alt="">
+  <div class="wrap">
+    <span class="kicker">🇨🇮 7 ans de présence en Côte d'Ivoire</span>
+    <h1>Le bon personnel, au bon moment, pour vos activités en Côte d'Ivoire.</h1>
+    <p>Recrutement, placement de personnel, externalisation de la paie, gestion des expatriés, conseil et formation.</p>
+    <div class="duo">
+      <a href="#demande"><b>Je suis une entreprise →</b><span>Décrivez votre besoin, un conseiller d'Abidjan vous rappelle.</span></a>
+      <a href="#candidats"><b>Je cherche un emploi →</b><span>Voir les offres en Côte d'Ivoire ou déposer mon CV.</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="chiffres"><div class="wrap">
+  <div><b>7 ans</b><span>de présence en Côte d'Ivoire</span></div>
+  <div><b>1 000+</b><span>personnes placées</span></div>
+  <div><b>50+</b><span>entreprises clientes</span></div>
+  <div><b>11+</b><span>collaborateurs permanents</span></div>
+</div></div>
+
+<section id="entreprises"><div class="wrap grid2">
+  <div>
+    <span class="eyebrow">Pour les entreprises</span>
+    <h2>Confiez-nous un recrutement, nous nous occupons du reste.</h2>
+    <p class="lead">Des postes ouvriers en nombre aux profils cadres : 100 conducteurs de tracteur portuaire, un superviseur HSE sur site minier, un contrôleur de gestion, un interprète français-chinois.</p>
+    <div class="services" style="grid-template-columns:1fr 1fr">
+      <div class="service"><b>Recrutement</b><span>CDI, CDD, cadres et profils rares.</span></div>
+      <div class="service"><b>Placement de personnel</b><span>Intérimaires et journaliers, sur vos sites.</span></div>
+      <div class="service"><b>Externalisation de la paie</b><span>Bulletins, déclarations et conformité.</span></div>
+      <div class="service"><b>Gestion des expatriés</b><span>Démarches et suivi en Côte d'Ivoire.</span></div>
+      <div class="service"><b>Conseil et formation</b><span>Pour vos équipes et vos responsables.</span></div>
+    </div>
+    <span class="eyebrow">Comment ça se passe</span>
+    <div class="steps">
+      <div class="step"><p><b>Vous décrivez votre besoin</b> dans le formulaire, ou par téléphone au 27 21 38 97 63.</p></div>
+      <div class="step"><p><b>Un conseiller d'Abidjan vous rappelle</b> sous <span class="ac">délai à confirmer</span> pour préciser le poste et le calendrier.</p></div>
+      <div class="step"><p><b>Nous sélectionnons les profils</b> dans notre vivier et par nos annonces, puis vous les présentons.</p></div>
+      <div class="step"><p><b>Nous suivons la mission</b> : contrats, paie et remplacement si besoin.</p></div>
+    </div>
+  </div>
+
+  <form class="card" id="demande" onsubmit="return false">
+    <h3>Parlez-nous de votre besoin</h3>
+    <p class="sub">Formulaire réservé aux entreprises. Réponse de l'agence d'Abidjan.</p>
+    <label>Votre besoin *</label>
+    <select><option>Recruter un ou plusieurs salariés</option><option>Personnel intérimaire ou journalier</option><option>Externaliser la paie</option><option>Gérer des expatriés</option><option>Conseil ou formation</option></select>
+    <div class="row">
+      <div><label>Entreprise *</label><input placeholder="Nom de l'entreprise"></div>
+      <div><label>Secteur</label><select><option>Choisir…</option><option>Mines et énergie</option><option>BTP et génie civil</option><option>Port, logistique, transport</option><option>Industrie</option><option>Commerce et distribution</option><option>Services</option><option>Autre</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>Nom et prénom *</label><input></div>
+      <div><label>Fonction</label><input placeholder="DRH, directeur de site…"></div>
+    </div>
+    <label>Téléphone *</label>
+    <div class="tel"><select><option>🇨🇮 +225</option><option>🇧🇫 +226</option><option>🇸🇳 +221</option><option>Autre</option></select><input placeholder="07 00 00 00 00"></div>
+    <label>E-mail professionnel *</label><input type="email">
+    <div class="row">
+      <div><label>Nombre de postes</label><input placeholder="Ex. 5"></div>
+      <div><label>Ville ou site</label><input placeholder="Abidjan, Yamoussoukro…"></div>
+    </div>
+    <label>Précisez votre besoin</label><textarea placeholder="Poste, durée, date de démarrage…"></textarea>
+    <button class="btn">Envoyer ma demande</button>
+    <p class="note">Vos informations servent uniquement à vous recontacter. <span class="ac">mention données personnelles à valider</span></p>
+  </form>
+</div></section>
+
+<section class="cand" id="candidats"><div class="wrap">
+  <span class="eyebrow">Pour les candidats</span>
+  <h2>Les dernières offres en Côte d'Ivoire</h2>
+  <p class="lead">Candidature gratuite. Postulez directement sur l'offre, avec un CV à jour.</p>
+  <div class="jobs">
+    <a class="job" href="https://www.umo-interim.com/poste/agents-de-transit-h-f/"><b>Agents de transit (H/F)</b><span>CDD · publié le 23 octobre 2026</span></a>
+    <a class="job" href="https://www.umo-interim.com/poste/chargee-des-ressources-humaines-h-f-2/"><b>Chargé(e) des ressources humaines (H/F)</b><span>CDD · publié le 23 octobre 2026</span></a>
+    <a class="job" href="https://www.umo-interim.com/poste/responsable-atelier-service-apres-vente-sav/"><b>Responsable atelier et service après-vente</b><span>CDD · publié le 20 octobre 2026</span></a>
+    <a class="job" href="https://www.umo-interim.com/poste/interprete-francais-chinois/"><b>Interprète français – chinois</b><span>CDD · publié le 16 octobre 2026</span></a>
+    <a class="job" href="https://www.umo-interim.com/poste/hse-manager/"><b>HSE manager</b><span>CDD · publié le 16 octobre 2026</span></a>
+    <a class="job" href="https://www.umo-interim.com/poste/ingenieurs-genie-civil/"><b>Ingénieurs génie civil</b><span>CDD · publié le 16 octobre 2026</span></a>
+  </div>
+  <a class="btn dark" href="https://www.umo-interim.com/jobs/">Voir toutes les offres en Côte d'Ivoire</a>
+
+  <div class="cv">
+    <img src="assets/chauffeur.jpg" alt="">
+    <div class="in">
+      <span class="eyebrow">Candidature spontanée</span>
+      <h2 style="font-size:27px">Aucune offre pour vous aujourd'hui ? Déposez votre CV.</h2>
+      <p>Il rejoint notre vivier de candidats en Côte d'Ivoire. Nos chargés de recrutement le consultent à chaque nouvelle mission.</p>
+      <label>Métier recherché</label><input placeholder="Ex. chauffeur poids lourd, comptable, ingénieur HSE">
+      <div class="row"><div><label>Ville</label><input placeholder="Abidjan"></div><div><label>Téléphone</label><input placeholder="+225"></div></div>
+      <div class="drop">📄 Glissez votre CV ici (PDF ou Word) ou <u>choisissez un fichier</u></div>
+      <button class="btn" style="width:100%;margin-top:18px">Déposer mon CV</button>
+    </div>
+  </div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+  <span class="eyebrow">Votre agence d'Abidjan</span>
+  <h2>Une équipe sur place, joignable directement</h2>
+  <div class="team">
+    <div class="pers"><div class="ini">AB</div><b>Alex Beugré</b><span>Responsable d'agence</span></div>
+    <div class="pers"><div class="ini">FD</div><b>Fabrice Doblé</b><span>Commercial</span></div>
+    <div class="pers"><div class="ini">CG</div><b>Cédric Garcia</b><span>Consultant commercial</span></div>
+    <div class="pers"><div class="ini">SK</div><b>Kouamé Stéphane Konan</b><span>Coordinateur des opérations RH et paie</span></div>
+  </div>
+  <p class="note" style="margin-top:14px">Photos de l'équipe <span class="ac">à fournir</span></p>
+
+  <div class="salon" style="margin-top:56px">
+    <div class="in">
+      <span class="kicker">Rendez-vous</span>
+      <h3>Retrouvez UMO au SIREXE, du 18 au 22 novembre 2026</h3>
+      <p>Parc des Expositions d'Abidjan. Venez parler de vos besoins en recrutement et en gestion du personnel.</p>
+      <a class="btn" style="margin-top:22px" href="#demande">Prendre rendez-vous</a>
+    </div>
+    <img src="assets/sirexe.jpg" alt="Visuel UMO au SIREXE">
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:20px"><div class="wrap" style="max-width:860px">
+  <span class="eyebrow">Questions fréquentes</span>
+  <h2>Vous vous demandez…</h2>
+  <details><summary>Je suis candidat : comment postuler ?</summary><p>Choisissez une offre et postulez directement dessus avec votre CV. Si aucune offre ne vous correspond, déposez votre CV en candidature spontanée. La candidature est gratuite.</p></details>
+  <details><summary>Le poste est basé où ?</summary><p>La ville est indiquée en haut de chaque offre. Pour une question précise, appelez l'agence au 27 21 38 97 63.</p></details>
+  <details><summary>Le lien pour postuler ne marche pas, que faire ?</summary><p>Écrivez-nous à contact.ci@umo-interim.com avec le nom du poste : nous vous aidons à finaliser votre candidature.</p></details>
+  <details><summary>Je suis une entreprise : sous quel délai serai-je rappelé ?</summary><p>Un conseiller de l'agence d'Abidjan vous rappelle sous <span class="ac">délai à confirmer</span>.</p></details>
+  <details><summary>Intervenez-vous hors d'Abidjan ?</summary><p>Oui, selon les missions, y compris sur des sites miniers. <span class="ac">zones couvertes à confirmer</span></p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Un besoin de personnel en Côte d'Ivoire ?</h2>
+  <p style="font-size:17px;color:var(--noir)">Parlez-en à l'agence d'Abidjan.</p>
+  <div class="btns"><a class="btn dark" href="#demande">Confier un recrutement</a><a class="btn dark" href="tel:+2252721389763">Appeler le 27 21 38 97 63</a></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><img src="assets/UMO-logo-blanc.svg" alt="UMO Intérim"><p>UMO Côte d'Ivoire, agence de recrutement et d'intérim du groupe UMO, présent dans 6 pays d'Afrique de l'Ouest.</p></div>
+  <div><b>Agence d'Abidjan</b>+225 27 21 38 97 63<br>contact.ci@umo-interim.com<br>Adresse <span class="ac">à confirmer</span></div>
+  <div><b>Suivez-nous</b>Facebook · LinkedIn<br>Chaîne WhatsApp UMO</div>
+</div></footer>
+
+<a class="wa" href="#">💬 WhatsApp</a>
+</body>
+</html>
