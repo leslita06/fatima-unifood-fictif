@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Les Awards des Entreprises et des Institutions Socio-économiques Africaines</title>
+<meta name="description" content="Célébrer et récompenser l'Afrique qui réussit. Lancement le 16 décembre, cérémonie le 26 mars à Abidjan.">
+<meta property="og:title" content="Les Awards des Entreprises et des Institutions Socio-économiques Africaines">
+<meta property="og:description" content="L'Afrique qui réussit a un visage. Lancement le 16 décembre, cérémonie le 26 mars.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--r:#7A0A0E;--rd:#4A0406;--rn:#2A0203;--or:#C99A3C;--ol:#F0E0A0;--cr:#FBF6EA;--k:#3A3030;--g:#7A6E6E}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,Arial,sans-serif;color:var(--k);background:var(--cr);line-height:1.6}
+a{color:inherit}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.or{color:var(--or)}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(42,2,3,.92);backdrop-filter:blur(6px);border-bottom:1px solid rgba(201,154,60,.35)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+nav img{height:46px;display:block}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{color:#fff;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.02em}
+nav ul a:hover{color:var(--ol)}
+.btn{display:inline-block;background:linear-gradient(135deg,#E2C06A,#B8862E);color:var(--rn);font-weight:700;padding:14px 26px;border-radius:40px;text-decoration:none;font-size:15px;border:0;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid var(--or);box-shadow:none}
+nav .btn{padding:10px 20px;font-size:13px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+/* hero */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--rn)}
+.hero:before{content:"";position:absolute;inset:0;background:url(img/hero.jpg) center/cover;opacity:.38}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(42,2,3,.97) 0%,rgba(74,4,6,.85) 45%,rgba(74,4,6,.35) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:60px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.kicker{color:var(--ol);letter-spacing:.22em;text-transform:uppercase;font-size:13px;font-weight:600}
+.hero h1{font-size:58px;margin:16px 0 18px}
+.hero p.lead{font-size:19px;max-width:620px;color:#F5E9E9}
+.dates{display:flex;gap:16px;margin:30px 0 34px;flex-wrap:wrap}
+.date{border:1px solid rgba(201,154,60,.6);border-radius:14px;padding:14px 20px;background:rgba(0,0,0,.2)}
+.date b{display:block;font-family:'Playfair Display',serif;font-size:26px;color:var(--ol)}
+.date span{font-size:13px;color:#eee}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .logo-big{background:var(--r);border:1px solid rgba(201,154,60,.5);border-radius:20px;padding:18px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.hero .logo-big img{width:100%;display:block;border-radius:10px}
+.count{display:flex;gap:10px;margin-top:18px;justify-content:center}
+.count div{background:rgba(0,0,0,.35);border-radius:10px;padding:10px 0;width:74px;text-align:center}
+.count b{display:block;font-size:26px;color:var(--ol);font-family:'Playfair Display',serif}
+.count span{font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.count-l{text-align:center;font-size:12px;color:var(--ol);margin-top:14px;letter-spacing:.1em;text-transform:uppercase}
+/* sections */
+section{padding:96px 0}
+.sec-h{max-width:760px;margin-bottom:50px}
+.sec-h h2{font-size:40px;color:var(--rd);margin:10px 0 14px}
+.sec-h p{font-size:17px;color:var(--g)}
+.kicker.dk{color:var(--or)}
+.line{width:64px;height:4px;background:var(--or);border-radius:2px}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about img{width:100%;border-radius:18px;box-shadow:0 20px 50px rgba(74,4,6,.25)}
+.about p{margin-bottom:16px;font-size:16.5px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px}
+.stat{background:#fff;border-radius:16px;padding:26px 22px;border-top:4px solid var(--or);box-shadow:0 6px 24px rgba(74,4,6,.07)}
+.stat b{font-family:'Playfair Display',serif;font-size:40px;color:var(--r);display:block}
+.stat span{font-size:14px;color:var(--g)}
+.src{font-size:12px;color:var(--g);margin-top:14px}
+/* pourquoi */
+.dark{background:var(--rd);color:#fff;position:relative}
+.dark .sec-h h2{color:#fff}.dark .sec-h p{color:#ead6d6}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(201,154,60,.35);border-radius:18px;padding:30px}
+.card .ic{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#E2C06A,#B8862E);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
+.card h3{font-size:22px;margin-bottom:10px;color:var(--ol)}
+.card p{font-size:15px;color:#f1e4e4}
+/* calendrier */
+.tl{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.tl:before{content:"";position:absolute;top:27px;left:6%;right:6%;height:3px;background:linear-gradient(90deg,var(--or),var(--r))}
+.step{position:relative;text-align:center;padding:0 6px}
+.step .dot{width:56px;height:56px;border-radius:50%;margin:0 auto 18px;background:var(--r);color:var(--ol);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;border:4px solid var(--cr);position:relative;z-index:2}
+.step.hl .dot{background:linear-gradient(135deg,#E2C06A,#B8862E);color:var(--rn)}
+.step h3{font-size:19px;color:var(--rd)}
+.step .d{color:var(--or);font-weight:700;font-size:13px;margin:4px 0 8px;text-transform:uppercase;letter-spacing:.05em}
+.step p{font-size:14px;color:var(--g)}
+/* catégories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{background:#fff;border-radius:14px;padding:22px;border-left:4px solid var(--or);font-weight:600;color:var(--rd);box-shadow:0 4px 18px rgba(74,4,6,.06)}
+.cat small{display:block;font-weight:400;color:var(--g);font-size:13px;margin-top:6px}
+.note{background:#F6E9C8;border-radius:12px;padding:16px 20px;margin-top:26px;font-size:14.5px}
+/* lauréats */
+.laur{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lc{background:#fff;border-radius:16px;padding:24px;position:relative;overflow:hidden;box-shadow:0 6px 24px rgba(74,4,6,.07)}
+.lc:after{content:"★";position:absolute;right:16px;top:10px;font-size:40px;color:#F3E2B5}
+.lc .y{font-size:12px;font-weight:700;color:var(--or);letter-spacing:.1em}
+.lc h3{font-size:19px;color:var(--rd);margin:6px 0}
+.lc p{font-size:14px;color:var(--g)}
+/* galerie */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+.gal div{border-radius:16px;background-size:cover;background-position:center;position:relative;overflow:hidden}
+.gal div:first-child{grid-row:span 2}
+.gal div span{position:absolute;left:14px;bottom:12px;background:rgba(42,2,3,.85);color:var(--ol);font-size:13px;font-weight:600;padding:6px 12px;border-radius:20px}
+/* forms */
+.tabs{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap}
+.tab{padding:12px 22px;border-radius:30px;border:1.5px solid var(--or);background:transparent;color:#fff;font-weight:600;cursor:pointer;font-family:inherit;font-size:14px}
+.tab.on{background:linear-gradient(135deg,#E2C06A,#B8862E);color:var(--rn);border-color:transparent}
+.fbox{background:#fff;color:var(--k);border-radius:20px;padding:34px;display:none}
+.fbox.on{display:block}
+.fbox h3{color:var(--rd);font-size:24px;margin-bottom:6px}
+.fbox>p{color:var(--g);margin-bottom:22px;font-size:15px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:13px;font-weight:600;color:var(--rd);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #E6DCCB;border-radius:10px;font-family:inherit;font-size:15px;background:var(--cr)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--or)}
+textarea{min-height:96px;resize:vertical}
+.full{grid-column:1/-1}
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.tier{border:1.5px solid #E6DCCB;border-radius:14px;padding:16px;font-size:13.5px}
+.tier b{display:block;color:var(--r);font-family:'Playfair Display',serif;font-size:19px;margin-bottom:6px}
+.legal{font-size:12px;color:var(--g);margin-top:14px}
+/* contact/footer */
+footer{background:var(--rn);color:#e9dada;padding:60px 0 30px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer img{height:70px;border-radius:8px}
+footer h4{color:var(--ol);margin-bottom:12px;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+footer a{text-decoration:none;display:block;margin-bottom:8px;font-size:14.5px}
+footer a:hover{color:var(--ol)}
+.copy{text-align:center;font-size:12px;color:#a88;margin-top:40px;border-top:1px solid rgba(201,154,60,.2);padding-top:22px}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.reveal{opacity:0;transform:translateY(24px);transition:all .7s ease}
+.reveal.vis{opacity:1;transform:none}
+@media(max-width:900px){
+ nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:var(--rn);flex-direction:column;padding:20px 24px;gap:16px}
+ nav ul.open{display:flex}
+ nav .btn{display:none}
+ .burger{display:block}
+ .hero .wrap,.about,footer .wrap{grid-template-columns:1fr}
+ .hero h1{font-size:38px}
+ .hero .logo-big{max-width:360px}
+ .stats,.cats,.tiers{grid-template-columns:1fr 1fr}
+ .cards,.laur{grid-template-columns:1fr}
+ .tl{grid-template-columns:1fr;gap:26px}.tl:before{display:none}
+ .step{text-align:left;display:grid;grid-template-columns:56px 1fr;gap:16px}.step .dot{margin:0}
+ .gal{grid-template-columns:1fr 1fr;grid-template-rows:200px 160px 160px}.gal div:first-child{grid-column:span 2;grid-row:auto}
+ .grid2{grid-template-columns:1fr}
+ section{padding:70px 0}.sec-h h2{font-size:31px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="wrap">
+  <a href="#top"><img src="img/logo-s.jpg" alt="Les Awards des Entreprises"></a>
+  <ul id="menu">
+   <li><a href="#awards">Les Awards</a></li>
+   <li><a href="#calendrier">Calendrier</a></li>
+   <li><a href="#categories">Catégories</a></li>
+   <li><a href="#laureats">Lauréats</a></li>
+   <li><a href="#participer">Participer</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn" href="#participer">Candidater</a>
+  <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu">☰</button>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div>
+   <div class="kicker">Abidjan · Côte d’Ivoire</div>
+   <h1>L’Afrique qui réussit <span class="or">a un visage.</span></h1>
+   <p class="lead">Les Awards des Entreprises et des Institutions Socio-économiques Africaines célèbrent et récompensent le top management des entreprises, des institutions et des personnalités qui font avancer le continent.</p>
+   <div class="dates">
+    <div class="date"><b>16 décembre</b><span>Cérémonie de lancement</span></div>
+    <div class="date"><b>26 mars</b><span>Cérémonie de remise des prix</span></div>
+   </div>
+   <div class="cta">
+    <a class="btn" href="#participer" onclick="tab('cand')">Proposer mon entreprise</a>
+    <a class="btn ghost" href="#participer" onclick="tab('part')">Devenir partenaire</a>
+   </div>
+  </div>
+  <div>
+   <div class="logo-big"><img src="img/logo.jpg" alt="Logo des Awards des Entreprises"></div>
+   <div class="count-l">Avant la cérémonie du 26 mars</div>
+   <div class="count" id="count"><div><b id="cd">–</b><span>jours</span></div><div><b id="ch">–</b><span>heures</span></div><div><b id="cm">–</b><span>min</span></div><div><b id="cs">–</b><span>sec</span></div></div>
+  </div>
+ </div>
+</header>
+
+<section id="awards">
+ <div class="wrap">
+  <div class="about">
+   <div class="reveal">
+    <div class="kicker dk">Les Awards</div>
+    <div class="sec-h" style="margin-bottom:22px"><h2>Le rendez-vous de l’excellence africaine</h2></div>
+    <p>Depuis plusieurs éditions, les Awards réunissent à Abidjan les dirigeants, les institutions et les décideurs publics autour d’une même idée : <b>encourager l’Afrique qui réussit</b>.</p>
+    <p>Une cérémonie de prestige, un dîner de gala et, depuis 2024, un forum sur l’inclusion financière, l’entrepreneuriat et le leadership féminin.</p>
+    <p>Organisés par <b>AB Communication</b>, les Awards distinguent chaque année des acteurs de tous les secteurs, en Côte d’Ivoire et dans toute l’Afrique.</p>
+   </div>
+   <img class="reveal" src="img/visage.jpg" alt="Une dirigeante africaine" loading="lazy">
+  </div>
+  <div class="stats">
+   <div class="stat reveal"><b>6</b><span>éditions organisées à Abidjan</span></div>
+   <div class="stat reveal"><b>≈ 500</b><span>convives à l’édition 2023</span></div>
+   <div class="stat reveal"><b>60+</b><span>lauréats récompensés en 2023</span></div>
+   <div class="stat reveal"><b>4</b><span>pays parmi les lauréats 2023 : Côte d’Ivoire, Sénégal, Rwanda, Gambie</span></div>
+  </div>
+  <p class="src">Sources : Fraternité Matin (11 décembre 2023), Infodirecte (9 décembre 2024).</p>
+ </div>
+</section>
+
+<section class="dark">
+ <div class="wrap">
+  <div class="sec-h reveal"><div class="kicker">Pourquoi participer</div><h2>Être reconnu par ceux qui comptent</h2><p>Un prix qui valorise vos équipes, rassure vos clients et vous place au cœur du réseau économique africain.</p></div>
+  <div class="cards">
+   <div class="card reveal"><div class="ic">🏆</div><h3>La reconnaissance</h3><p>Une distinction remise devant les dirigeants, les institutions et la presse, à afficher sur tous vos supports.</p></div>
+   <div class="card reveal"><div class="ic">🤝</div><h3>Le réseau</h3><p>Une soirée qui rassemble le secteur privé et les décideurs publics, pour des rencontres qui ouvrent des portes.</p></div>
+   <div class="card reveal"><div class="ic">📣</div><h3>La visibilité</h3><p>Nominés et lauréats mis en avant sur nos réseaux, dans la presse et pendant la retransmission en direct.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="calendrier">
+ <div class="wrap">
+  <div class="sec-h reveal"><div class="kicker dk">Calendrier</div><h2>Cent jours jusqu’à la grande soirée</h2><p>Les dates intermédiaires seront confirmées au lancement.</p></div>
+  <div class="tl">
+   <div class="step hl reveal"><div class="dot">1</div><div><h3>Lancement</h3><div class="d">16 décembre</div><p>Cérémonie officielle, présentation du jury et ouverture des candidatures.</p></div></div>
+   <div class="step reveal"><div class="dot">2</div><div><h3>Candidatures</h3><div class="d">Décembre – janvier</div><p>Les entreprises et institutions déposent leur dossier en ligne.</p></div></div>
+   <div class="step reveal"><div class="dot">3</div><div><h3>Nominés</h3><div class="d">Février</div><p>Le jury délibère et les nominés sont annoncés catégorie par catégorie.</p></div></div>
+   <div class="step reveal"><div class="dot">4</div><div><h3>Compte à rebours</h3><div class="d">Mars</div><p>Réservations, invités d’honneur et coulisses de la préparation.</p></div></div>
+   <div class="step hl reveal"><div class="dot">5</div><div><h3>Cérémonie</h3><div class="d">26 mars</div><p>Remise des prix, dîner de gala et retransmission en direct.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="categories" style="background:#fff">
+ <div class="wrap">
+  <div class="sec-h reveal"><div class="kicker dk">Catégories</div><h2>Tous les secteurs qui font l’économie</h2><p>Les éditions précédentes ont distingué des acteurs de tous les secteurs. Exemples de domaines récompensés :</p></div>
+  <div class="cats">
+   <div class="cat reveal">Banque, finance et assurance<small>Inclusion financière, services</small></div>
+   <div class="cat reveal">BTP et génie civil<small>Infrastructures, construction</small></div>
+   <div class="cat reveal">Éducation et formation<small>Écoles, formation professionnelle</small></div>
+   <div class="cat reveal">Transport et logistique<small>Transit, transport</small></div>
+   <div class="cat reveal">Santé et bien-être<small>Laboratoires, soins</small></div>
+   <div class="cat reveal">Communication et médias<small>Agences, industries culturelles</small></div>
+   <div class="cat reveal">Leadership féminin<small>Femmes dirigeantes</small></div>
+   <div class="cat reveal">Institutions et action sociale<small>Œuvres sociales, développement</small></div>
+  </div>
+  <div class="note">La liste officielle des catégories, les critères et la composition du jury seront publiés le <b>16 décembre</b>, à la cérémonie de lancement.</div>
+ </div>
+</section>
+
+<section id="laureats">
+ <div class="wrap">
+  <div class="sec-h reveal"><div class="kicker dk">Le mur des lauréats</div><h2>Ils ont été distingués</h2><p>Quelques lauréats des éditions passées, tels qu’annoncés par la presse ou par les lauréats eux-mêmes.</p></div>
+  <div class="laur">
+   <div class="lc reveal"><div class="y">2023 · SUPER PRIX</div><h3>Le Président de la République de Côte d’Ivoire</h3><p>« Awards des Awards » pour le développement du pays.</p></div>
+   <div class="lc reveal"><div class="y">2023</div><h3>Ministère Messages de Vie</h3><p>Distingué pour ses œuvres sociales.</p></div>
+   <div class="lc reveal"><div class="y">2023</div><h3>Kuyo Pipeline</h3><p>Lauréat de la 5e édition, au Sofitel Hôtel Ivoire.</p></div>
+   <div class="lc reveal"><div class="y">2022</div><h3>Laboratoire Longchamp</h3><p>Une distinction de plus à son tableau d’honneur.</p></div>
+   <div class="lc reveal"><div class="y">2022</div><h3>Onoa Spa</h3><p>Meilleur institut de bien-être.</p></div>
+   <div class="lc reveal"><div class="y">2019</div><h3>Voodoo Group</h3><p>Meilleure entreprise de communication, médias et industries culturelles.</p></div>
+  </div>
+  <div class="gal reveal" style="margin-top:44px">
+   <div style="background-image:url(img/gala.jpg)"><span>En direct sur les réseaux</span></div>
+   <div style="background-image:url(img/dirigeant.jpg)"><span>Les dirigeants</span></div>
+   <div style="background-image:url(img/forum.jpg)"><span>Le forum</span></div>
+   <div style="background-image:url(img/presse.jpg)"><span>La presse</span></div>
+   <div style="background-image:url(img/hero.jpg)"><span>La remise des prix</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="participer" class="dark">
+ <div class="wrap">
+  <div class="sec-h reveal"><div class="kicker">Participer</div><h2>Rejoignez l’édition du 26 mars</h2><p>Choisissez votre démarche : l’équipe des Awards vous recontacte.</p></div>
+  <div class="tabs">
+   <button class="tab on" data-t="cand" onclick="tab('cand')">Proposer une entreprise</button>
+   <button class="tab" data-t="part" onclick="tab('part')">Devenir partenaire</button>
+   <button class="tab" data-t="resa" onclick="tab('resa')">Réserver ma place</button>
+  </div>
+
+  <form class="fbox on" id="f-cand" onsubmit="return send(event,'Candidature')">
+   <h3>Proposer une entreprise ou une institution</h3>
+   <p>Pour votre propre structure ou pour une autre que vous jugez exemplaire.</p>
+   <div class="grid2">
+    <div><label>Nom de la structure</label><input name="Structure" required></div>
+    <div><label>Secteur</label><input name="Secteur" required></div>
+    <div><label>Pays</label><input name="Pays" value="Côte d’Ivoire"></div>
+    <div><label>Nom du dirigeant</label><input name="Dirigeant"></div>
+    <div><label>Votre nom</label><input name="Contact" required></div>
+    <div><label>Téléphone ou WhatsApp</label><input name="Téléphone" required></div>
+    <div class="full"><label>Pourquoi mérite-t-elle un Award ?</label><textarea name="Motif" placeholder="Un résultat, une innovation, un impact…"></textarea></div>
+   </div>
+   <p class="legal">Vos informations servent uniquement à traiter votre demande.</p>
+   <button class="btn" style="margin-top:14px">Envoyer ma proposition</button>
+  </form>
+
+  <form class="fbox" id="f-part" onsubmit="return send(event,'Partenariat')">
+   <h3>Devenir partenaire des Awards</h3>
+   <p>Associez votre marque à l’excellence africaine, devant les dirigeants et les institutions.</p>
+   <div class="tiers">
+    <div class="tier"><b>Platine</b>Partenaire principal, présence sur tous les supports et pendant le direct.</div>
+    <div class="tier"><b>Or</b>Logo, publications dédiées, prise de parole.</div>
+    <div class="tier"><b>Argent</b>Logo et visibilité pendant la campagne.</div>
+    <div class="tier"><b>Catégorie</b>Votre nom associé à un prix.</div>
+   </div>
+   <div class="grid2">
+    <div><label>Entreprise</label><input name="Entreprise" required></div>
+    <div><label>Formule qui vous intéresse</label><select name="Formule"><option>Platine</option><option>Or</option><option>Argent</option><option>Partenaire de catégorie</option><option>Partenaire média</option><option>À discuter</option></select></div>
+    <div><label>Votre nom et fonction</label><input name="Contact" required></div>
+    <div><label>Téléphone ou WhatsApp</label><input name="Téléphone" required></div>
+   </div>
+   <button class="btn" style="margin-top:20px">Recevoir le dossier de partenariat</button>
+  </form>
+
+  <form class="fbox" id="f-resa" onsubmit="return send(event,'Réservation')">
+   <h3>Réserver pour la cérémonie du 26 mars</h3>
+   <p>Places individuelles ou tables d’entreprise. Les tarifs vous sont communiqués par l’équipe.</p>
+   <div class="grid2">
+    <div><label>Nom</label><input name="Nom" required></div>
+    <div><label>Entreprise</label><input name="Entreprise"></div>
+    <div><label>Formule</label><select name="Formule"><option>Place individuelle</option><option>Table d’entreprise</option></select></div>
+    <div><label>Nombre de places</label><input name="Places" type="number" min="1" value="1"></div>
+    <div class="full"><label>Téléphone ou WhatsApp</label><input name="Téléphone" required></div>
+   </div>
+   <button class="btn" style="margin-top:20px">Demander ma réservation</button>
+  </form>
+ </div>
+</section>
+
+<footer id="contact">
+ <div class="wrap">
+  <div><img src="img/logo-s.jpg" alt="Logo des Awards"><p style="margin-top:16px;font-size:14px;max-width:340px">Célébrer et récompenser le top management des entreprises, des institutions et des personnalités socio-économiques africaines.</p></div>
+  <div><h4>Contact</h4><a href="tel:+2250749570218">+225 07 49 57 02 18</a><a href="tel:+2250152535960">+225 01 52 53 59 60</a><a href="mailto:sicoms2013@gmail.com">sicoms2013@gmail.com</a><a>Abidjan, Côte d’Ivoire</a></div>
+  <div><h4>Suivre les Awards</h4><a href="https://www.facebook.com/TopEntrepriseCI/" target="_blank" rel="noopener">Facebook</a><a href="#">Instagram (bientôt)</a><a href="#">LinkedIn (bientôt)</a><a href="#">TikTok (bientôt)</a><p style="margin-top:10px;font-size:13px" class="or">#LAfriqueQuiRéussit</p></div>
+ </div>
+ <div class="copy">© Les Awards des Entreprises et des Institutions Socio-économiques Africaines · AB Communication</div>
+</footer>
+
+<a class="wa" href="https://wa.me/2250749570218" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.6.9 1-3.5-.2-.4C3 15.7 2.5 13.9 2.5 12 2.5 6.8 6.8 2.5 12 2.5S21.5 6.8 21.5 12 17.2 21.8 12 21.8zM12 .5C5.7.5.5 5.7.5 12c0 2 .5 4 1.5 5.7L.5 23.5l5.9-1.5c1.7.9 3.6 1.4 5.6 1.4 6.3 0 11.5-5.2 11.5-11.5S18.3.5 12 .5z"/></svg></a>
+
+<script>
+// compte à rebours jusqu'au prochain 26 mars, 18 h à Abidjan (heure à confirmer)
+(function(){
+ var n=new Date(),y=n.getUTCFullYear(),t=Date.UTC(y,2,26,18,0,0);
+ if(t<n.getTime())t=Date.UTC(y+1,2,26,18,0,0);
+ function u(){var s=Math.max(0,Math.floor((t-Date.now())/1000));
+  document.getElementById('cd').textContent=Math.floor(s/86400);
+  document.getElementById('ch').textContent=Math.floor(s%86400/3600);
+  document.getElementById('cm').textContent=Math.floor(s%3600/60);
+  document.getElementById('cs').textContent=s%60;}
+ u();setInterval(u,1000);
+})();
+function tab(k){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.t==k));
+ document.querySelectorAll('.fbox').forEach(f=>f.classList.toggle('on',f.id=='f-'+k));}
+// les demandes partent sur le WhatsApp de l'équipe, en attendant un formulaire relié à une boîte
+function send(e,type){e.preventDefault();var f=e.target,m='Awards des Entreprises · '+type+'\n';
+ new FormData(f).forEach((v,k)=>{if(v)m+=k+' : '+v+'\n'});
+ window.open('https://wa.me/2250749570218?text='+encodeURIComponent(m),'_blank');return false;}
+var io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+</script>
+</body>
+</html>
